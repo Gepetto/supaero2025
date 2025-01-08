@@ -1,6 +1,7 @@
 """
 Base (abstract) class for environments.
 """
+
 import time
 
 import numpy as np

@@ -25,7 +25,7 @@ class TrajRef:
 
     def acceleration(self, t):
         """Compute and return the reference acceleration at time <t>."""
-        self.aq.flat[:] = -self.omega**2 * self.amplitude * np.sin(self.omega * t)
+        self.aq.flat[:] = -(self.omega**2) * self.amplitude * np.sin(self.omega * t)
         return self.aq
 
     def __call__(self, t):

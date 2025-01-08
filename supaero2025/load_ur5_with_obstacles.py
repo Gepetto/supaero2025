@@ -27,10 +27,13 @@ def load_ur5_with_obstacles(robotname="ur5", reduced=False):
     # a simple R2 robot.
     if reduced:
         unlocks = [1, 2]
-        robot.model, [
-            robot.visual_model,
-            robot.collision_model,
-        ] = pin.buildReducedModel(
+        (
+            robot.model,
+            [
+                robot.visual_model,
+                robot.collision_model,
+            ],
+        ) = pin.buildReducedModel(
             robot.model,
             [robot.visual_model, robot.collision_model],
             [i + 1 for i in range(robot.nq) if i not in unlocks],

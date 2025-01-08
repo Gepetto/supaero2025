@@ -95,7 +95,8 @@ for episode in range(1, NEPISODES):
 
     for step in range(NSTEPS):
         u = qvalue.policy(
-            x, noise=1.0 / (1.0 + episode + step)  # Greedy policy ...
+            x,
+            noise=1.0 / (1.0 + episode + step),  # Greedy policy ...
         )  # ... with noise
         x2, r = env.step(u)
         done = False  # Some environment may return information when task completed
