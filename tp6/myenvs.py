@@ -45,9 +45,11 @@ class EnvMountainCarFullyDiscrete(gym.Wrapper):
         assert self.is_discrete_state_in_range(discrete_state)
         return np.array(
             [
-                (self.bins[i][d - 1] + self.bins[i][d]) / 2
-                if 0 < d < len(self.bins[i])
-                else self.state_bounds[i][d == 0]
+                (
+                    (self.bins[i][d - 1] + self.bins[i][d]) / 2
+                    if 0 < d < len(self.bins[i])
+                    else self.state_bounds[i][d == 0]
+                )
                 for i, d in enumerate(discrete_state)
             ]
         )

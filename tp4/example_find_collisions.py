@@ -3,6 +3,7 @@ Minimal example of pinocchio API for collision computation.
 Create a 3-body scene, sample random configurations until a collision
 is obtained, and display the API of the resulting contact object.
 """
+
 import pinocchio as pin
 
 from supaero2025.meshcat_viewer_wrapper import MeshcatVisualizer

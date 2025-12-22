@@ -8,7 +8,6 @@ The convergence of the distances of each collision pair with negative
 (colliding) distances is finally plot.
 """
 
-
 import matplotlib.pyplot as plt
 import numpy as np
 import pinocchio as pin

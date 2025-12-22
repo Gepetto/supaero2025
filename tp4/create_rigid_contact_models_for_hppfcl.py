@@ -3,7 +3,6 @@ Define the functions to create a set of pin.RigidConstraintModels from
 the results of the collision and distance functions.
 """
 
-
 import numpy as np
 import pinocchio as pin
 

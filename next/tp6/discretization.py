@@ -25,9 +25,7 @@ class VectorDiscretization:
         self.vmin = (
             vmin
             if isinstance(vmin, np.ndarray)
-            else -self.vmax
-            if vmin is None
-            else np.array([vmin] * nv)
+            else -self.vmax if vmin is None else np.array([vmin] * nv)
         )
         self.nsteps = (
             nsteps if isinstance(nsteps, np.ndarray) else np.array([nsteps] * nv)

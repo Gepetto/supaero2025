@@ -3,7 +3,6 @@ Some useful and simple helpers for hppfcl:
 - load_hppfcl_convex_from_stl_file
 """
 
-
 import hppfcl
 
 
